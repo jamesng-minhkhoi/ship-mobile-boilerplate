@@ -7,7 +7,6 @@ import { spacingTokens } from "@/constants/spacing";
 import { useThemeColor } from "@/hooks/useThemeColor";
 import { Stack, router } from "expo-router";
 import React from "react";
-import { View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function NotFoundScreen() {
@@ -29,7 +28,7 @@ export default function NotFoundScreen() {
                     404
                 </AppText>
                 <AppText type="bodyLarge" color="secondary" align="center" style={{ marginBottom: spacingTokens["6xl"] }}>
-                    This screen doesn't exist.
+                    This screen doesn&apos;t exist.
                 </AppText>
                 <AppButton color="primary" onPress={() => router.replace("/")}>
                     Go Home

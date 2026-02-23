@@ -15,16 +15,17 @@ export default function ProtectedLayout() {
 
     useEffect(() => {
         const initializeUserData = async () => {
-            if (!session?.user) return;
+            const userId = session?.user?.id;
+            if (!userId) return;
 
             // Fetch user profile
-            await fetchProfile(session.user.id);
+            await fetchProfile(userId);
 
             // Add more data fetching here as needed
         };
 
         initializeUserData();
-    }, [session?.user?.id]);
+    }, [fetchProfile, session?.user?.id]);
 
     return (
         <View style={{ flex: 1 }}>

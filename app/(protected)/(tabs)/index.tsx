@@ -35,7 +35,7 @@ export default function HomeScreen() {
                     }}
                 >
                     <AppText type="labelSmall" color="white">
-                        You're offline
+                        You&apos;re offline
                     </AppText>
                 </Animated.View>
             )}

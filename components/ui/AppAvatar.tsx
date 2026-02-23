@@ -4,7 +4,6 @@
 
 import { designTokens } from "@/constants/colors";
 import { radiusTokens, sizeTokens } from "@/constants/sizes";
-import { useThemeColor } from "@/hooks/useThemeColor";
 import React from "react";
 import { Image, View, ViewStyle } from "react-native";
 import { AppText } from "./AppText";
@@ -26,8 +25,6 @@ export function AppAvatar({
     size = "md",
     style,
 }: AppAvatarProps) {
-    const theme = useThemeColor();
-
     const sizeMap = {
         sm: sizeTokens.avatarSm,
         md: sizeTokens.avatarMd,

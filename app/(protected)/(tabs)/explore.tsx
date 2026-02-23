@@ -24,7 +24,7 @@ export default function ExploreScreen() {
                 </AppText>
 
                 <AppText type="bodyLarge" color="secondary" style={{ marginBottom: spacingTokens["6xl"] }}>
-                    Discover content and features. Customize this screen for your app's needs.
+                    Discover content and features. Customize this screen for your app&apos;s needs.
                 </AppText>
 
                 <View style={{ gap: spacingTokens["3xl"] }}>

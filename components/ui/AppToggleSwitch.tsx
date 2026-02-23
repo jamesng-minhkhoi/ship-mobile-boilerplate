@@ -6,7 +6,7 @@ import { designTokens } from "@/constants/colors";
 import { useThemeColor } from "@/hooks/useThemeColor";
 import * as Haptics from "expo-haptics";
 import React from "react";
-import { Pressable, View, ViewStyle } from "react-native";
+import { Pressable, ViewStyle } from "react-native";
 import Animated, {
     interpolateColor,
     useAnimatedStyle,
@@ -51,7 +51,7 @@ export function AppToggleSwitch({
 
     React.useEffect(() => {
         progress.value = withSpring(value ? 1 : 0, { damping: 15, stiffness: 200 });
-    }, [value]);
+    }, [progress, value]);
 
     const trackStyle = useAnimatedStyle(() => ({
         backgroundColor: interpolateColor(
