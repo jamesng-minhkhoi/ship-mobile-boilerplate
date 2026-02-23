@@ -7,7 +7,6 @@
 import { designTokens } from "@/constants/colors";
 import { radiusTokens } from "@/constants/sizes";
 import { spacingTokens } from "@/constants/spacing";
-import { useThemeColor } from "@/hooks/useThemeColor";
 import * as Haptics from "expo-haptics";
 import React from "react";
 import {
@@ -78,8 +77,6 @@ export function AppButton({
     backgroundColor,
     ...props
 }: AppButtonProps) {
-    const theme = useThemeColor();
-
     const handlePressIn = (event: any) => {
         if (hapticEnabled && !disabled && !loading) {
             Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);

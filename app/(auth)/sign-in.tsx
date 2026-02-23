@@ -6,7 +6,7 @@ import { AppButton, AppCard, AppInputField, AppText } from "@/components/ui";
 import { spacingTokens } from "@/constants/spacing";
 import { useThemeColor } from "@/hooks/useThemeColor";
 import useStore from "@/store";
-import { Link, router } from "expo-router";
+import { Link } from "expo-router";
 import React, { useState } from "react";
 import { Alert, KeyboardAvoidingView, Platform, ScrollView, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -103,7 +103,7 @@ export default function SignInScreen() {
                     </AppCard>
 
                     <View style={{ flexDirection: "row", justifyContent: "center" }}>
-                        <AppText color="secondary">Don't have an account? </AppText>
+                        <AppText color="secondary">Don&apos;t have an account? </AppText>
                         <Link href="/(auth)/sign-up">
                             <AppText color="link" weight="semibold">
                                 Sign Up

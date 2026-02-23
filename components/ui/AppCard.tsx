@@ -13,7 +13,6 @@ import {
     Pressable,
     PressableProps,
     View,
-    ViewProps,
     ViewStyle,
 } from "react-native";
 

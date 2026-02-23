@@ -53,7 +53,7 @@ export default function ForgotPasswordScreen() {
                             align="center"
                             style={{ marginTop: spacingTokens.lg }}
                         >
-                            We've sent a password reset link to {email}
+                            We&apos;ve sent a password reset link to {email}
                         </AppText>
                     </View>
 
